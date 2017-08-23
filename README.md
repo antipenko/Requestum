@@ -19,4 +19,4 @@
 <li>JavaScript development:6 hours </li>
 </ul>
 
-
+The finished files are located in the <strong>dist</strong> folder
