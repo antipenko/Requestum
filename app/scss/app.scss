@@ -1,0 +1,252 @@
+$header-color: #333333;
+$primary-color: #ed1111;
+$text-color: #a5a4a4;
+$text-font-size: 11px;
+$price-font-size:1.5625rem; // 25px for desktope
+$button-background: #fff;
+$button-add-background: #ed8e8e;
+$button-view-background: #d9d9d9;
+ul{
+	list-style:none;
+	margin: 0;
+}
+
+html{
+	font-size: 16px;
+	//padding-top:48px;
+}
+//settings
+body{
+	background-color: #efeeee;
+	font-family: 'Ubuntu', sans-serif;
+}
+.text-center{
+	text-align: center;
+}
+.row{
+	max-width:1250px;
+	padding:48px 10px 0;
+	min-height: 100vh;
+	margin:auto;
+	background-color: #fff;
+}
+.clearfix::before, .clearfix::after {
+	display: table;
+	content: ' ';
+	clear: both;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	-webkit-appearance: none;
+	transition: background-color 0.4s ease-out, color 0.5s ease-out;
+	vertical-align: middle;
+	border: 1px solid #e5e5e5;
+	border-radius: 0;
+	height: 38px;
+	margin-bottom: 1rem ;
+	background-color: $button-background;
+	color: $primary-color;
+	text-transform: uppercase;
+	font-size: 13px;
+	&:hover{
+		color: darken($primary-color, 10);
+	}
+}
+
+//markup styles
+.products{
+	margin-bottom: 40px;
+}
+.product{
+	display: block;
+	position: relative;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	padding: 10px;
+	margin: 0 0px 40px 0;
+	transition:box-shadow .25s;
+	&:hover, &focus{
+		box-shadow: 0 3px 7px rgba(0, 0, 0, 0.35);
+	}
+	&_link{
+	}
+	&_img{
+		margin-top: -30px;
+		max-width:100%;
+	}
+	&_title{
+		font-size: 0.875rem;
+		color: $header-color;
+		margin:17px 0 14px;
+		text-align: left;
+		font-weight:400;
+		&:first-letter{
+			text-transform: uppercase;
+		}
+		&:hover{
+			color: $primary-color;
+			text-decoration: underline;
+		}
+	}
+	&_description{
+		font-size:$text-font-size;
+		color:$text-color;
+		margin:0 0 24px;
+		text-align:left;
+		max-height:36px;
+		overflow: hidden;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		font-weight: 300;
+	}
+	&-price{
+		text-align: left;
+		margin-bottom: 28px;
+		&__main{
+			font-size:$price-font-size;
+			color:$header-color;
+			margin-right: 23px;
+		}
+		&__old{
+			font-size:1.0625rem;
+			color: $primary-color;
+
+		}
+	}
+	.button{
+		width: 49%;
+		&-add{
+			font-size: 13px;
+			font-weight:500;
+			&:hover, &focus{
+				background-color: $button-add-background;
+			}
+		}
+		&-view{
+			font-size: 12px;
+			color: #999e9f;
+			background-color: $button-view-background;
+			&:hover, &focus{
+				background-color: darken(#999e9f, 10);
+				color:#fff;
+			}
+		}
+	}
+	&-label{
+		position: absolute;
+		display: block;
+		top: 100px;
+		width: 70px;
+		height: 40px;
+		font-size: 13px;
+		line-height: 40px;
+		color:#fff;
+		font-weight: 500;
+		text-transform: uppercase;
+		user-select: none;
+		&_sale{
+			background-color: $primary-color;
+			left: 10px;
+		}
+		&_new{
+			background-color: #000000;
+			right: 10px;
+		}
+	}
+}
+
+.button-load{
+	font-family: "Myriad Pro", sans-serif;
+}
+
+.product-wrapper{
+	float: left;
+	padding: 0 1rem;
+	transition: transform .5s;
+}
+
+.hide{
+	display: none;
+	transform: translateY(-10px);
+}
+.loader{
+	display: none;
+}
+.sidebar{
+	&-wrapper{
+		float: left;
+		padding:0 15px;
+	}
+	border: 1px solid #e5e5e5;
+	padding:47px 40px 57px 26px;
+	color: $text-color;
+	font-size: 0.6875rem;
+	font-weight: 300;
+	&-title{
+		font-family: Raleway, sans-serif;
+		font-size: 1.25rem;
+		margin:0 0 21px;
+		color: $header-color;
+		text-transform: uppercase;
+		font-weight: 500;
+	}
+	&-text{
+		margin: 0 0 1.125rem;
+	}
+	.offer-list{
+		margin: 0;
+		color: $text-color;
+		font-size: 0.6875rem;
+		font-weight: 300;
+		&__item{
+			position: relative;
+			padding-left: 15px;
+			margin-bottom: 13px;
+			&:before{
+				content: " ";
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 0;
+				height: 0;
+				border-top: 5px solid transparent;
+				border-left: 5px solid $primary-color;
+				border-bottom: 5px solid transparent;
+			}
+		}
+	}
+	.contact-list__item{
+		margin-bottom: 13px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	.product-wrapper {
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper{
+		width: 33.333%;
+	}
+	.sidebar-wrapper{
+		width: 33.33%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 25%;
+	}
+}
