@@ -49,7 +49,7 @@ gulp.task('css', function () {
 // browser-sync
 gulp.task('browser-sync', function() {
     browserSync.init({
-        proxy: "http://localhost/requestom/dist/index.php"
+        proxy: "http://localhost/requestum/dist/index.php"
     });
 });
 

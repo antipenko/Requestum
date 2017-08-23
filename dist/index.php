@@ -9,7 +9,9 @@
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="icon" href="favicon.png">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
@@ -135,18 +137,24 @@
             <h2 class="sidebar-title">Store information</h2>
 
             <ul class="contact-list">
-                <li class="contact-list__item">
-                    Company Inc., 8901 Marmora Road, Glasgow, D04 89GR
+                <li class="contact-list__item clearfix">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>Company Inc., 8901 Marmora Road, Glasgow, D04 89GR </span>
                 </li>
-                <li class="contact-list__item">
-                    Call us now toll free: (800) 2345-6789
+                <li class="contact-list__item clearfix">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Call us now toll free: (800) 2345-6789</span>
                 </li>
-                <li class="contact-list__item">
-                    Customer support: support@example.com
-                    Press: pressroom@example.com
+                <li class="contact-list__item clearfix">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                        Customer support: support@example.com
+                        Press: pressroom@example.com
+                    </span>
                 </li>
-                <li class="contact-list__item">
-                    Skype: sample-username
+                <li class="contact-list__item clearfix">
+                    <i class="fa fa-skype" aria-hidden="true"></i>
+                    <span>Skype: sample-username </span>
                 </li>
             </ul>
 </aside></div>

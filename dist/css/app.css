@@ -15,7 +15,6 @@ body {
 .row {
   max-width: 1250px;
   padding: 48px 10px 0;
-  min-height: 100vh;
   margin: auto;
   background-color: #fff; }
 
@@ -147,7 +146,11 @@ body {
 .loader {
   display: none; }
 
+.footer {
+  padding-bottom: 30px; }
+
 .sidebar {
+  margin-bottom: 1rem;
   border: 1px solid #e5e5e5;
   padding: 47px 40px 57px 26px;
   color: #a5a4a4;
@@ -186,9 +189,22 @@ body {
         border-bottom: 5px solid transparent; }
   .sidebar .contact-list__item {
     margin-bottom: 13px; }
+    .sidebar .contact-list__item .fa {
+      color: #ed1111;
+      font-size: 31px;
+      padding-right: 10px;
+      overflow: hidden;
+      float: left; }
+    .sidebar .contact-list__item span {
+      float: left;
+      display: inline-block;
+      padding: 6px 0;
+      width: 80%; }
 
 @media only screen and (max-width: 450px) {
   .product-wrapper {
+    width: 100%; }
+  .sidebar-wrapper {
     width: 100%; } }
 
 @media only screen and (min-width: 450px) {
