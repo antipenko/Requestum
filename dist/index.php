@@ -15,7 +15,6 @@
 	<link rel="stylesheet" href="css/app.css">
 	<link rel="icon" href="favicon.png">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 <!--<div>-->
 
