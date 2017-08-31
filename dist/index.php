@@ -3,12 +3,11 @@
 ?>
 
 <!doctype html>
-<!--<div class="no-js" lang="en">-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Foundation for Sites</title>
+	<title>Requestum Shop</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -16,7 +15,6 @@
 	<link rel="icon" href="favicon.png">
 	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
 </head>
-<!--<div>-->
 
 	<main>
 		<div class="row clearfix">
