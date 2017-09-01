@@ -177,13 +177,14 @@ body{
 }
 .footer{
 	padding-bottom: 30px;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
 }
 .sidebar{
+	max-width:400px;
+	width: 30%;
 	margin-bottom: 1rem;
-	&-wrapper{
-		float: left;
-		padding:0 15px;
-	}
 	border: 1px solid #e5e5e5;
 	padding:47px 40px 57px 26px;
 	color: $text-color;
@@ -224,26 +225,28 @@ body{
 	}
 	.contact-list__item{
 		margin-bottom: 13px;
-		.fa{
-			color: $primary-color;
-			font-size:31px;
-			padding-right: 10px;
-			overflow: hidden;
-			float: left;
-		}
 		span{
-			float: left;
+			float: right;
 			display: inline-block;
 			padding:6px 0;
 			width: 80%;
 		}
+	}
+	.fa{
+		color: $primary-color;
+		font-size:31px;
+		padding-right: 5px;
+		overflow: hidden;
+		float: left;
 	}
 }
 @media only screen and (max-width: 450px) {
 	.product-wrapper {
 		width: 100%;
 	}
-	.sidebar-wrapper{
+}
+@media only screen and (max-width: 700px) {
+	.sidebar{
 		width: 100%;
 	}
 }
@@ -252,15 +255,20 @@ body{
 	.product-wrapper {
 		width: 50%;
 	}
-
 }
+@media only screen and (max-width: 850px) {
+	.sidebar{
+		padding:47px 30px 47px 20px;
+		.contact-list__item span{
+				max-width: 75%;
+			}
+		}
+	}
+
 
 @media only screen and (min-width: 768px) {
 	.product-wrapper{
 		width: 33.333%;
-	}
-	.sidebar-wrapper{
-		width: 33.33%;
 	}
 }
 

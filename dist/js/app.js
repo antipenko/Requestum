@@ -18,8 +18,6 @@ btnLoadProducts.onclick = function () {
     loadProducts(productPage);
 };
 
-// Sets the equal height asides
-setEqualHeight($(".sidebar"));
 
 function showProducts() {
     $('.hide').fadeIn(500);
@@ -165,21 +163,21 @@ function markupProduct(product, obj) {
 
 
 //Equal Height for each other aside in footer
-function setEqualHeight(columns)
-{
-    var tallestcolumn = 0;
-    columns.each(
-        function()
-        {
-            currentHeight = $(this).height();
-            console.log(currentHeight);
-            if(currentHeight > tallestcolumn)
-            {
-                tallestcolumn = currentHeight;
-            }
-        }
-    );
-    columns.height(tallestcolumn);
-}
+// function setEqualHeight(columns)
+// {
+//     var tallestcolumn = 0;
+//     columns.each(
+//         function()
+//         {
+//             currentHeight = $(this).height();
+//             console.log(currentHeight);
+//             if(currentHeight > tallestcolumn)
+//             {
+//                 tallestcolumn = currentHeight;
+//             }
+//         }
+//     );
+//     columns.height(tallestcolumn);
+// }
 
 

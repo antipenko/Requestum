@@ -3,7 +3,7 @@
 return [
     [
         'title' => 'test title 1',
-        'description' => 'It is a long established fact that a readerIt is a long established fact that a readerIt is a long established fact that a readerIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. ',
+        'description' => 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
         'cost' => '249.00',
         'discountCost' => '199.00',
         'new' => true,

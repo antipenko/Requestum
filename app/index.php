@@ -24,7 +24,7 @@
                     <div class="product">
                         <a href="#" class="product_link">
                             <img src="<?php echo $item['img']; ?>" alt="<?php echo $item['title']; ?>" class="product_img">
-                            <h1 class="product_title"><?php echo $item['title']; ?></h1>
+                            <h2 class="product_title"><?php echo $item['title']; ?></h2>
                         </a>
                         <p class="product_description"><?php echo $item['description']; ?></p>
                         <div class="product-price">
@@ -81,8 +81,8 @@
 		</div>
 	</main>
 
-    <footer class="footer row clearfix">
-        <div class="sidebar-wrapper"><aside class="sidebar offer">
+    <footer class="footer row">
+            <aside class="sidebar offer">
             <h2 class="sidebar-title">hot offers</h2>
             <p class="sidebar-text">
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
@@ -104,9 +104,9 @@
                     Donec in velit vel ipsum auctor pulvin
                 </li>
             </ul>
-        </aside></div>
+        </aside>
 
-        <div class="sidebar-wrapper"><aside class="sidebar offer">
+            <aside class="sidebar offer">
             <h2 class="sidebar-title">hot offers</h2>
             <p class="sidebar-text">
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
@@ -128,9 +128,9 @@
                     Donec in velit vel ipsum auctor pulvin
                 </li>
             </ul>
-</aside></div>
+</aside>
 
-        <div class="sidebar-wrapper"><aside class="sidebar contact">
+            <aside class="sidebar contact">
             <h2 class="sidebar-title">Store information</h2>
 
             <ul class="contact-list">
@@ -154,7 +154,7 @@
                     <span>Skype: sample-username </span>
                 </li>
             </ul>
-</aside></div>
+</aside>
 
     </footer>
 
